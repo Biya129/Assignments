@@ -1,10 +1,4 @@
-class Person:
-    def __init__(self, name, email):
-        self.name = name
-        self.email = email
-    
-    def get_info(self):
-        return f"Name: {self.name}, Email: {self.email}"
+from person import Person
 
 class Customer(Person):
     def __init__(self, name, email, loyalty_points, membership_date):
@@ -17,5 +11,3 @@ class Customer(Person):
     
     def get_membership_info(self):
         return f"Membership Date: {self.membership_date}, Loyalty Points: {self.loyalty_points}"
-
-

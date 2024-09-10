@@ -1,5 +1,5 @@
-from person import Customer
-from person import Worker 
+from customer import Customer
+from worker import Worker 
 from services import SoapOnly
 from services import SoapAndPolish
 from services import SoapPolishInnerClean
@@ -8,7 +8,6 @@ from vehicle import Vehicle
 from car_record import VehicleRecord
 
 customer = Customer("Bisma Ali", "biya929@gmail.com", "33%", "2024-09-01")
-worker = Worker("Ali Ahmad", "Ali129@gmail.com","Cleaner", 33000)
 
 print(worker.work())   
 
