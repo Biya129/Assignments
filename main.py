@@ -3,9 +3,9 @@ from worker import Worker
 from services import SoapOnly
 from services import SoapAndPolish
 from services import SoapPolishInnerClean
-from record import EntryRecord
+from entryrecord import EntryRecord
 from vehicle import Vehicle
-from car_record import VehicleRecord
+from vehcilerecord import VehicleRecord
 
 if __name__ == "__main__":
     customer = Customer("Bisma Ali", "biya929@gmail.com", "33%", "2024-09-01")
