@@ -1,4 +1,6 @@
-from services import SoapOnly, SoapAndPolish, SoapPolishInnerClean
+from tier1 import SoapOnly
+from tier2 import SoapAndPolish
+from tier3 import SoapPolishInnerClean
 from vehicle import Vehicle
 
 class EntryRecord:

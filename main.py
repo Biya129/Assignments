@@ -1,6 +1,10 @@
+from person import Person
 from customer import Customer
 from worker import Worker
-from services import SoapOnly, SoapAndPolish, SoapPolishInnerClean
+from carwashservice import CarWashService
+from tier1 import SoapOnly
+from tier2 import SoapAndPolish
+from tier3 import SoapPolishInnerClean
 from entryrecord import EntryRecord
 from vehicle import Vehicle
 from vehiclerecord import VehicleRecord
@@ -8,10 +12,10 @@ from vehiclerecord import VehicleRecord
 if __name__ == "__main__":
 
     vehicle1 = Vehicle(owner="Abdul Wahab", make="Toyota", model="Corolla", color="Red", registration_num="Abdul-1378")
-    customer1 = Customer(name="Bisma Ali", email="biya929@gmail.com", vehicle=vehicle1, loyalty_points=450, membership_date="2024-07-09")
+    customer1 = Customer(name="Bisma Ali", email="biya929@gmail.com", vehicle="Civic", loyalty_points=450, membership_date="2024-07-09", owner="Abdul Wahab", make="Toyota", model="Corolla", color="Red", registration_num="Abdul-1378")
 
     vehicle2 = Vehicle(owner="Usman Ali", make="Honda", model="Civic", color="Blue", registration_num="Jutt-7856")
-    customer2 = Customer(name="Iqra Ali", email="iqra442@gmail.com", vehicle=vehicle2, loyalty_points=700, membership_date="2023-10-14")
+    customer2 = Customer(name="Iqra Ali", email="iqra442@gmail.com", vehicle="Honda", loyalty_points=700, membership_date="2023-10-14", owner="Abdul Wahab", make="Toyota", model="Corolla", color="Red", registration_num="Abdul-1378")
 
     worker = Worker(name="Ali Ahmad", email="ahmad112@gmail.com", position="Manager", salary=50000)
     print(worker.work())
